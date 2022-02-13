@@ -198,7 +198,15 @@ const quotes: Quote[] = [
 
 
 app.get('/quotes', (req, res) => {
-    res.send(quotes)
+    const search = req.query.search
+
+    if (typeof search === 'string') {
+        const match = quotes.filter(quote => quote.content.toUpperCase().includes(search.toUpperCase()))
+        res.send(match)
+    } else {
+
+        res.send(quotes)
+    }
 })
 app.get('/quotes/:id', (req, res) => {
     const id = Number(req.params.id);
@@ -220,6 +228,11 @@ app.get('/quotes/author/:name', (req, res) => {
     } else {
         res.status(404).send({ error: 'Quote not found' })
     }
+})
+
+app.get('/', (req, res) => {
+    console.log(req.query.search)
+    // res.send(req.query.search)
 })
 
 app.listen(PORT, () => {
