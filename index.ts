@@ -196,7 +196,7 @@ const quotes: Quote[] = [
             firstName: 'Aristotle',
             lastName: '',
             born: 384,
-            death: 382,
+            death: 322,
             image: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTqE1mtped62BJfdsQc13Y0715JFp8r-V99U5bNzbtjVPj8iIwzwurFSW2IdIEY'
         }
 
