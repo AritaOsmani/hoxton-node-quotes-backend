@@ -22,7 +22,7 @@ type Quote = {
 }
 
 
-const quotes: Quote[] = [
+let quotes: Quote[] = [
     {
         id: 1,
         content: 'The greatest glory in living lies not in never falling, but in rising every time we fall.',
@@ -431,7 +431,7 @@ app.post('/quotes', (req, res) => {
 
     if (errors.length === 0) {
         const newQuote: Quote = {
-            id: quotes.length + 1,
+            id: Math.random(),
             content: content,
             author: {
                 firstName: firstName,
@@ -446,6 +446,68 @@ app.post('/quotes', (req, res) => {
         res.status(201).send(newQuote)
     } else {
         res.status(400).send({ errors: errors })
+    }
+})
+
+
+app.patch('/quotes/:id', (req, res) => {
+
+    const id = Number(req.params.id);
+    const matchedQuote = quotes.find(quote => quote.id === id)
+    const errors = []
+    if (matchedQuote) {
+        if (typeof req.body.content === 'string') {
+            matchedQuote.content = req.body.content
+        } else {
+            errors.push('Content property should be a string!')
+        }
+        if (typeof req.body.firstName === 'string') {
+            matchedQuote.author.firstName = req.body.firstName
+        } else {
+            errors.push('First name property should be a string!')
+        }
+        if (typeof req.body.lastName === 'string') {
+            matchedQuote.author.lastName = req.body.lastName
+        } else {
+            errors.push('Last name property should be a string!')
+        }
+        if (typeof req.body.born === 'number') {
+            matchedQuote.author.born = req.body.born
+        } else {
+            errors.push('Born property should be a number!')
+        }
+        if (req.body.death) {
+            if (typeof req.body.death === 'number') {
+                matchedQuote.author.death = req.body.death
+            } else {
+                errors.push('Death property should be a number!')
+            }
+        }
+        if (typeof req.body.image === 'string') {
+            matchedQuote.author.image = req.body.image
+        } else {
+            errors.push('Image property should be a string!')
+        }
+
+        res.send({ matchedQuote, errors })
+    } else {
+        res.status(404).send({ error: 'Quote not found' })
+    }
+})
+
+
+
+app.delete('/quotes/:id', (req, res) => {
+
+    const id = Number(req.params.id);
+
+    const match = quotes.find(quote => quote.id === id)
+
+    if (match) {
+        quotes = quotes.filter(quote => quote.id !== id)
+        res.send('Quote deleted sucessfully')
+    } else {
+        res.status(404).send({ error: 'Quote not found' })
     }
 })
 
