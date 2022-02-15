@@ -16,6 +16,7 @@ type Quote = {
         born: number
         death?: number
         image: string
+        bio?: string
     }
 
 
@@ -31,7 +32,8 @@ let quotes: Quote[] = [
             lastName: 'Mandela',
             born: 1918,
             death: 2013,
-            image: 'https://cdnuploads.aa.com.tr/uploads/Contents/2021/12/05/thumbs_b_c_575ab60fcd2d75931e1d8418806ac638.jpg?v=161537'
+            image: 'https://cdnuploads.aa.com.tr/uploads/Contents/2021/12/05/thumbs_b_c_575ab60fcd2d75931e1d8418806ac638.jpg?v=161537',
+            bio: "Nelson Mandela was born Rolihlahla Mandela on July 18, 1918, in a rural village in the Transkei region of South Africa.  His name means “troublemaker” in the Xhosa language. A teacher at a Christian mission school later gave him the name Nelson. Mandela rose from a humble village of mud huts into a comfortable life as the adopted son of a Tembu chief."
         }
 
     },
@@ -43,7 +45,8 @@ let quotes: Quote[] = [
             lastName: 'Disney',
             born: 1901,
             death: 1966,
-            image: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Walt_Disney_1946.JPG'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Walt_Disney_1946.JPG',
+            bio: "Walt Disney was born on December 5, 1901. Disney became one of the best-known motion picture producers in the world. He is particularly noted for being a film producer and a popular showman, as well as an innovator in animation and theme park design."
         },
 
     },
@@ -55,7 +58,8 @@ let quotes: Quote[] = [
             lastName: 'Jobs',
             born: 1955,
             death: 2011,
-            image: 'https://cdn.idropnews.com/wp-content/uploads/2021/10/05102831/Steve-Jobs-8.jpg'
+            image: 'https://cdn.idropnews.com/wp-content/uploads/2021/10/05102831/Steve-Jobs-8.jpg',
+            bio: "Steven Paul Jobs was an American inventor, designer and entrepreneur who was the co-founder, chief executive and chairman of Apple Computer. Apple's revolutionary products, which include the iPod, iPhone and iPad, are now seen as dictating the evolution of modern technology. "
         },
 
     },
@@ -67,7 +71,8 @@ let quotes: Quote[] = [
             lastName: 'Roosevelt',
             born: 1884,
             death: 1962,
-            image: 'https://en.wikipedia.org/wiki/Eleanor_Roosevelt#/media/File:Eleanor_Roosevelt_portrait_1933.jpg'
+            image: 'https://en.wikipedia.org/wiki/Eleanor_Roosevelt#/media/File:Eleanor_Roosevelt_portrait_1933.jpg',
+            bio: "Anna Eleanor Roosevelt was born in New York City on October 11, 1884. Her father was Elliott Roosevelt, President Theodore Roosevelt's younger brother and her mother was Anna Hall, a member of the distinguished Livingston family."
         },
 
     },
@@ -78,7 +83,8 @@ let quotes: Quote[] = [
             firstName: 'Oprah',
             lastName: 'Winfrey',
             born: 1954,
-            image: 'https://www.biography.com/.image/t_share/MTY2NTIzMDQzOTIzODk1NTM4/oprah-photo-by-vera-anderson_wireimage.jpg'
+            image: 'https://www.biography.com/.image/t_share/MTY2NTIzMDQzOTIzODk1NTM4/oprah-photo-by-vera-anderson_wireimage.jpg',
+            bio: "Oprah Winfrey is a talk show host, media executive, actress and billionaire philanthropist. She’s best known for being the host of her own, wildly popular program, The Oprah Winfrey Show, which aired for 25 seasons, from 1986 to 2011. In 2011, Winfrey launched her own TV network, the Oprah Winfrey Network (OWN)."
         },
 
     },
@@ -89,7 +95,8 @@ let quotes: Quote[] = [
             firstName: 'James',
             lastName: 'Cameron',
             born: 1954,
-            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNbZf9bzSjQhCZKXVuQYTNoIiAuiE2qsN8NWk5aTq6d1faV0su'
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNbZf9bzSjQhCZKXVuQYTNoIiAuiE2qsN8NWk5aTq6d1faV0su',
+            bio: "James Cameron was born on August 16, 1954, in Kapuskasing, Ontario, Canada. A science-fiction fan as a child, he grew up to become one of the most visionary filmmakers in Hollywood. He initially pursued physics as a student at California State University, Fullerton, but he left to follow his cinematic dreams. "
         }
 
     },
@@ -101,7 +108,8 @@ let quotes: Quote[] = [
             lastName: 'Lennon',
             born: 1940,
             death: 1980,
-            image: 'https://www.gannett-cdn.com/-mm-/ae811a38ccb7ca7681c5cd9edc7e0bae36516e06/c=261-0-2174-2550/local/-/media/2015/10/08/Phoenix/Phoenix/635799268539755113-ae-lennon09e.jpg'
+            image: 'https://www.gannett-cdn.com/-mm-/ae811a38ccb7ca7681c5cd9edc7e0bae36516e06/c=261-0-2174-2550/local/-/media/2015/10/08/Phoenix/Phoenix/635799268539755113-ae-lennon09e.jpg',
+            bio: "John Lennon was a British singer-songwriter and a key member of the Beatles – a musical and cultural phenomenon. After the Beatles, Lennon went on to have a distinguished solo career. Lennon was also an icon of the 1960s counter-culture revolution and was an anti-war activist."
         }
 
     },
@@ -113,7 +121,8 @@ let quotes: Quote[] = [
             lastName: 'Teresa',
             born: 1910,
             death: 1997,
-            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTOh54psgfIkMkiLg7BCgX3n3qnKyOxcg2hSWFyvm28DVDwXLHUsLR9jNB7VuXh'
+            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTOh54psgfIkMkiLg7BCgX3n3qnKyOxcg2hSWFyvm28DVDwXLHUsLR9jNB7VuXh',
+            bio: "Mother Teresa was the founder of the Order of the Missionaries of Charity, a Roman Catholic congregation of women dedicated to helping the poor. Considered one of the 20th Century's greatest humanitarians, she was canonized as Saint Teresa of Calcutta in 2016."
         }
 
     },
@@ -125,7 +134,8 @@ let quotes: Quote[] = [
             lastName: 'Roosevelt',
             born: 1882,
             death: 1945,
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/220px-FDR_1944_Color_Portrait.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/220px-FDR_1944_Color_Portrait.jpg',
+            bio: "Franklin Delano Roosevelt, byname FDR, (born January 30, 1882, Hyde Park, New York, U.S.—died April 12, 1945, Warm Springs, Georgia), 32nd president of the United States (1933-45). The only president elected to the office four times, Roosevelt led the United States through two of the greatest crises of the 20th century: the Great Depression and World War II. "
         },
 
     },
@@ -137,7 +147,8 @@ let quotes: Quote[] = [
             lastName: 'Mead',
             born: 1901,
             death: 1978,
-            image: 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQstBFfHbjMIKEhun2dgTuN7KAY3D7lR5iJFG9G01MYFnc64UKpQSavuzJafUon'
+            image: 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQstBFfHbjMIKEhun2dgTuN7KAY3D7lR5iJFG9G01MYFnc64UKpQSavuzJafUon',
+            bio: "Margaret Mead was an American cultural anthropologist who featured frequently as an author and speaker in the mass media during the 1960s and 1970s"
         }
 
     },
@@ -149,7 +160,8 @@ let quotes: Quote[] = [
             lastName: 'Stevenson',
             born: 1850,
             death: 1894,
-            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rjWt9T4RwjlDWoXTsaPu-YTwY3YaM99-lz58j0TCP8ttUlf4'
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rjWt9T4RwjlDWoXTsaPu-YTwY3YaM99-lz58j0TCP8ttUlf4',
+            bio: "Robert Louis Stevenson was a Scottish novelist, essayist, poet and travel writer. He is best known for works such as Treasure Island, Strange Case of Dr Jekyll and Mr Hyde, Kidnapped and A Child's Garden of Verses"
         }
 
     },
@@ -161,7 +173,8 @@ let quotes: Quote[] = [
             lastName: 'Roosevelt',
             born: 1884,
             death: 1962,
-            image: 'https://en.wikipedia.org/wiki/Eleanor_Roosevelt#/media/File:Eleanor_Roosevelt_portrait_1933.jpg'
+            image: 'https://en.wikipedia.org/wiki/Eleanor_Roosevelt#/media/File:Eleanor_Roosevelt_portrait_1933.jpg',
+            bio: "Anna Eleanor Roosevelt was born in New York City on October 11, 1884. Her father was Elliott Roosevelt, President Theodore Roosevelt's younger brother and her mother was Anna Hall, a member of the distinguished Livingston family."
         },
 
     },
@@ -173,7 +186,8 @@ let quotes: Quote[] = [
             lastName: 'Franklin',
             born: 1706,
             death: 1790,
-            image: 'https://benjaminfranklin.net/images/benjamin-franklin.jpg'
+            image: 'https://benjaminfranklin.net/images/benjamin-franklin.jpg',
+            bio: "Benjamin Franklin FRS FRSA FRSE was an American polymath who was active as a writer, scientist, inventor, statesman, diplomat, printer, publisher and political philosopher."
         }
 
     },
@@ -185,7 +199,8 @@ let quotes: Quote[] = [
             lastName: 'Keller',
             born: 1880,
             death: 1968,
-            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UkvnwsF1nmPU2Wz595OCBoQH1A16OUGyml9qTo9kRk0c04g'
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UkvnwsF1nmPU2Wz595OCBoQH1A16OUGyml9qTo9kRk0c04g',
+            bio: "Helen Adams Keller was an American author, disability rights advocate, political activist and lecturer. Born in West Tuscumbia, Alabama, she lost her sight and hearing after a bout of illness at the age of nineteen months"
         }
 
     },
@@ -197,7 +212,8 @@ let quotes: Quote[] = [
             lastName: '',
             born: 384,
             death: 322,
-            image: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTqE1mtped62BJfdsQc13Y0715JFp8r-V99U5bNzbtjVPj8iIwzwurFSW2IdIEY'
+            image: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTqE1mtped62BJfdsQc13Y0715JFp8r-V99U5bNzbtjVPj8iIwzwurFSW2IdIEY',
+            bio: "Aristotle was a Greek philosopher and polymath during the Classical period in Ancient Greece. Taught by Plato, he was the founder of the Lyceum, the Peripatetic school of philosophy, and the Aristotelian tradition."
         }
 
     },
@@ -209,7 +225,8 @@ let quotes: Quote[] = [
             lastName: 'Frank',
             born: 1929,
             death: 1945,
-            image: 'https://static01.nyt.com/images/2022/01/19/arts/18anne-frank-folo1/merlin_115719422_4fbbc78b-0a46-46fa-97dc-45fd057cff96-mobileMasterAt3x.jpg'
+            image: 'https://static01.nyt.com/images/2022/01/19/arts/18anne-frank-folo1/merlin_115719422_4fbbc78b-0a46-46fa-97dc-45fd057cff96-mobileMasterAt3x.jpg',
+            bio: "Annelies Marie Frank was a German-Dutch diarist of Jewish heritage. One of the most discussed Jewish victims of the Holocaust, she gained fame posthumously with the 1947 publication of The Diary of a Young Girl"
         }
 
     },
@@ -221,7 +238,8 @@ let quotes: Quote[] = [
             lastName: 'Emerson',
             born: 1803,
             death: 1882,
-            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSjPy2rjMFVmWAc-1jjfRujCrp6M2vpJ_PHSi8QqKVU7G6MxMwKsndM49miXbL9'
+            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSjPy2rjMFVmWAc-1jjfRujCrp6M2vpJ_PHSi8QqKVU7G6MxMwKsndM49miXbL9',
+            bio: "Ralph Waldo Emerson, who went by his middle name Waldo, was an American essayist, lecturer, philosopher, abolitionist, and poet who led the transcendentalist movement of the mid-19th century."
         }
 
     },
@@ -233,7 +251,8 @@ let quotes: Quote[] = [
             lastName: 'Teresa',
             born: 1910,
             death: 1997,
-            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTOh54psgfIkMkiLg7BCgX3n3qnKyOxcg2hSWFyvm28DVDwXLHUsLR9jNB7VuXh'
+            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTOh54psgfIkMkiLg7BCgX3n3qnKyOxcg2hSWFyvm28DVDwXLHUsLR9jNB7VuXh',
+            bio: "Mother Teresa was the founder of the Order of the Missionaries of Charity, a Roman Catholic congregation of women dedicated to helping the poor. Considered one of the 20th Century's greatest humanitarians, she was canonized as Saint Teresa of Calcutta in 2016."
         }
 
     },
@@ -245,7 +264,8 @@ let quotes: Quote[] = [
             lastName: 'Edison',
             born: 1847,
             death: 1931,
-            image: 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRCgpvWd7vYbxDSaNDMOeOSDwR1t4xOJuY_Pf3m8ClFDG43Vf9DPANdJ9wSuMuo'
+            image: 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRCgpvWd7vYbxDSaNDMOeOSDwR1t4xOJuY_Pf3m8ClFDG43Vf9DPANdJ9wSuMuo',
+            bio: "Thomas Alva Edison was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures"
         }
 
     },
@@ -257,7 +277,8 @@ let quotes: Quote[] = [
             lastName: '',
             born: 1904,
             death: 1991,
-            image: 'https://en.wikipedia.org/wiki/Dr._Seuss#/media/File:Theodor_Seuss_Geisel_(01037v).jpg'
+            image: 'https://en.wikipedia.org/wiki/Dr._Seuss#/media/File:Theodor_Seuss_Geisel_(01037v).jpg',
+            bio: "Theodor Seuss Geisel was an American children's author, political cartoonist, illustrator, poet, animator, and filmmaker. He is known for his work writing and illustrating more than 60 books under the pen name Dr. Seuss"
         }
 
     },
@@ -269,7 +290,8 @@ let quotes: Quote[] = [
             lastName: 'Keller',
             born: 1880,
             death: 1968,
-            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UkvnwsF1nmPU2Wz595OCBoQH1A16OUGyml9qTo9kRk0c04g'
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UkvnwsF1nmPU2Wz595OCBoQH1A16OUGyml9qTo9kRk0c04g',
+            bio: "Helen Adams Keller was an American author, disability rights advocate, political activist and lecturer. Born in West Tuscumbia, Alabama, she lost her sight and hearing after a bout of illness at the age of nineteen months"
         }
 
     },
@@ -281,7 +303,8 @@ let quotes: Quote[] = [
             lastName: 'Ruth',
             born: 1895,
             death: 1948,
-            image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLKC8XWcgLkQvyQZFKZdAeZY1kz-mMhjuSFu5nANlhFRtwv_ei'
+            image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLKC8XWcgLkQvyQZFKZdAeZY1kz-mMhjuSFu5nANlhFRtwv_ei',
+            bio: "George Herman 'Babe' Ruth Jr. was an American professional baseball player whose career in Major League Baseball spanned 22 seasons, from 1914 through 1935"
         }
 
     },
@@ -293,7 +316,8 @@ let quotes: Quote[] = [
             lastName: 'Wilde',
             born: 1854,
             death: 1900,
-            image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV9dQb1kweIGwZylKyFoljZYQddagTN2v3DaErncU0dNWwOL5y'
+            image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV9dQb1kweIGwZylKyFoljZYQddagTN2v3DaErncU0dNWwOL5y',
+            bio: "Oscar Fingal O'Flahertie Wills Wilde was an Irish poet and playwright. After writing in different forms throughout the 1880s, he became one of the most popular playwrights in London in the early 1890s."
         }
 
     },
@@ -305,7 +329,8 @@ let quotes: Quote[] = [
             lastName: 'Einstein',
             born: 1879,
             death: 1955,
-            image: 'https://no.wikipedia.org/wiki/Albert_Einstein#/media/Fil:Albert_Einstein_Head.jpg'
+            image: 'https://no.wikipedia.org/wiki/Albert_Einstein#/media/Fil:Albert_Einstein_Head.jpg',
+            bio: "Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics."
         }
 
     },
@@ -316,7 +341,8 @@ let quotes: Quote[] = [
             firstName: 'Dalai',
             lastName: 'Lama',
             born: 1935,
-            image: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Dalailama1_20121014_4639.jpg',
+            bio: "The 14th Dalai Lama, known as Gyalwa Rinpoche to the Tibetan people, is the current Dalai Lama, the highest spiritual leader and former head of state of Tibet"
         }
 
     },
@@ -328,7 +354,8 @@ let quotes: Quote[] = [
             lastName: 'West',
             born: 1893,
             death: 1980,
-            image: 'https://en.wikipedia.org/wiki/Mae_West#/media/File:Mae_West_LAT.jpg'
+            image: 'https://en.wikipedia.org/wiki/Mae_West#/media/File:Mae_West_LAT.jpg',
+            bio: "Mae West was an American stage and film actress, playwright, screenwriter, singer, and sex symbol whose entertainment career spanned over seven decades. She was known for her breezy sexual independence, and her lighthearted bawdy double entendres, often delivered in a husky contralto voice."
         }
 
     },
@@ -340,7 +367,8 @@ let quotes: Quote[] = [
             lastName: 'Thoreau',
             born: 1817,
             death: 1862,
-            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSWrCRzadHKIofduRnG4lVp5WVnMNjZuHf654yg15SQ8VB8VAQoL8uEm0CQ34ir'
+            image: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSWrCRzadHKIofduRnG4lVp5WVnMNjZuHf654yg15SQ8VB8VAQoL8uEm0CQ34ir',
+            bio: "Henry David Thoreau was an American naturalist, essayist, poet, and philosopher. A leading transcendentalist, he is best known for his book Walden, a reflection upon simple living in natural surroundings, and his essay 'Civil Disobedience', an argument for disobedience to an unjust state."
         }
 
     },
@@ -352,7 +380,8 @@ let quotes: Quote[] = [
             lastName: 'Swift',
             born: 1667,
             death: 1745,
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Jonathan_Swift_by_Charles_Jervas_detail.jpg/1200px-Jonathan_Swift_by_Charles_Jervas_detail.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Jonathan_Swift_by_Charles_Jervas_detail.jpg/1200px-Jonathan_Swift_by_Charles_Jervas_detail.jpg',
+            bio: "Jonathan Swift was an Anglo-Irish satirist, essayist, political pamphleteer, poet and Anglican cleric who became Dean of St Patrick's Cathedral, Dublin, hence his common sobriquet, 'Dean Swift'."
         }
 
     },
@@ -364,7 +393,8 @@ let quotes: Quote[] = [
             lastName: 'Andersen',
             born: 1805,
             death: 1875,
-            image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/HCA_by_Thora_Hallager_1869.jpg'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/HCA_by_Thora_Hallager_1869.jpg',
+            bio: "Hans Christian Andersen was a Danish author. Although a prolific writer of plays, travelogues, novels, and poems, he is best remembered for his literary fairy tales."
         }
 
     },
@@ -376,7 +406,8 @@ let quotes: Quote[] = [
             lastName: 'Marley',
             born: 1945,
             death: 1981,
-            image: 'https://www.rollingstone.com/wp-content/uploads/2020/01/Bob-Marley-Lead.jpg'
+            image: 'https://www.rollingstone.com/wp-content/uploads/2020/01/Bob-Marley-Lead.jpg',
+            bio: "Robert Nesta Marley OM was a Jamaican singer, songwriter, and musician. Considered one of the pioneers of reggae, his musical career was marked by fusing elements of reggae, ska, and rocksteady, as well as his distinctive vocal and songwriting style."
         }
 
     }
@@ -401,6 +432,7 @@ app.post('/quotes', (req, res) => {
     const firstName = req.body.firstName
     const lastName = req.body.lastName
     const born = req.body.born
+    const bio = req.body.bio
 
     const image = req.body.image
 
@@ -428,6 +460,12 @@ app.post('/quotes', (req, res) => {
     if (typeof image !== 'string') {
         errors.push('Image missing or not a string')
     }
+    if (req.body.bio) {
+        if (typeof bio !== 'string') {
+            errors.push('Bio not a string!')
+        }
+    }
+
 
     if (errors.length === 0) {
         const newQuote: Quote = {
@@ -438,7 +476,8 @@ app.post('/quotes', (req, res) => {
                 lastName: lastName,
                 born: born,
                 death: req.body.death,
-                image: image
+                image: image,
+                bio: bio
             }
         }
 
@@ -505,7 +544,8 @@ app.delete('/quotes/:id', (req, res) => {
 
     if (match) {
         quotes = quotes.filter(quote => quote.id !== id)
-        res.send('Quote deleted sucessfully')
+        res.send({ response: 'Quote deleted sucessfully' })
+
     } else {
         res.status(404).send({ error: 'Quote not found' })
     }
