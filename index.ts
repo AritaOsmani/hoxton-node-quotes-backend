@@ -528,6 +528,13 @@ app.patch('/quotes/:id', (req, res) => {
             errors.push('Image property should be a string!')
         }
 
+        if (req.body.bio) {
+            if (typeof req.body.bio === 'string') {
+                matchedQuote.author.bio = req.body.bio
+            } else {
+                errors.push('Bio property should be a sting!')
+            }
+        }
         res.send({ matchedQuote, errors })
     } else {
         res.status(404).send({ error: 'Quote not found' })
