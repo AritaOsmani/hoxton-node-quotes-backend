@@ -448,7 +448,7 @@ app.post('/quotes', (req, res) => {
         errors.push('Last name missing or not a string')
     }
     if (typeof born !== 'number') {
-        errors.push('Born year missing or not a number')
+        errors.push({ message: 'Born year missing or not a number' })
     }
     if (req.body.death) {
         const death = req.body.death
@@ -574,7 +574,7 @@ app.get('/quotes/author/:name', (req, res) => {
     const matches = quotes.filter(quote => quote.author.firstName.toUpperCase().includes(name.toUpperCase()) || quote.author.lastName.toUpperCase().includes(name.toUpperCase()))
 
     if (matches.length !== 0) {
-        res.send(matches)
+        res.status(200).send(matches)
     } else {
         res.status(404).send({ error: 'Quote not found' })
     }
