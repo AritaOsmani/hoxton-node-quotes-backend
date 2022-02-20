@@ -133,20 +133,11 @@ app.post('/authors', (req, res) => {
     if (typeof image !== 'string') {
         errors.push('Image url missing or not a string!')
     }
-    if (req.body.death) {
-        if (req.body.death !== 'number') {
-            errors.push('Death year not a number!')
-        }
-    }
-    if (req.body.bio) {
-        if (req.body.bio !== 'string') {
-            errors.push('Bio not a string!')
-        }
-    }
+
 
     if (errors.length === 0) {
         const result = createAuthor.run(firstName, lastName, born, req.body.death, image, req.body.bio);
-        const newAuthor = getAllQuotesById.get(result.lastInsertRowid);
+        const newAuthor = getAuthorById.get(result.lastInsertRowid);
         res.send(newAuthor)
     } else {
         res.status(400).send(errors)
