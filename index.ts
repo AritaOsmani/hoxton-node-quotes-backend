@@ -52,6 +52,14 @@ const deleteQuote = db.prepare(`
     DELETE FROM quotes WHERE id=?
 `)
 
+const deleteAuthorQuote = db.prepare(`
+    DELETE FROM quotes WHERE authorId = ?;
+`)
+
+const deleteAuthor = db.prepare(`
+    DELETE FROM authors WHERE id=?;
+`)
+
 app.get('/quotes', (req, res) => {
     const allQuotes = getAllQuotes.all()
     // const allQuotes = getQuotes.all()
@@ -61,6 +69,16 @@ app.get('/quotes', (req, res) => {
 app.get('/authors', (req, res) => {
     const authors = getAuthors.all();
     res.send(authors)
+})
+
+app.get('/authors/:id', (req, res) => {
+    const id = req.params.id;
+    const result = getAuthorById.get(id)
+    if (result) {
+        res.send(result)
+    } else {
+        res.status(404).send('Author not found!')
+    }
 })
 
 app.get('/quotes/:id', (req, res) => {
@@ -213,6 +231,18 @@ app.delete('/quotes/:id', (req, res) => {
         res.status(200).send({ message: 'Quote deleted sucessfully' })
     } else {
         res.status(404).send({ message: 'Quote does not exist' })
+    }
+})
+
+app.delete('/authors/:id', (req, res) => {
+    const id = req.params.id;
+    const result = deleteAuthor.run(id);
+
+    if (result.changes !== 0) {
+        deleteAuthorQuote.run(id);
+        res.status(200).send({ message: 'Author deleted sucessfully' })
+    } else {
+        res.status(404).send({ message: 'Author does not exist' })
     }
 })
 
